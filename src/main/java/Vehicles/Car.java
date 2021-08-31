@@ -1,15 +1,15 @@
 package Vehicles;
 
 public abstract class Car {
-    private int colour;
+    private String colour;
     private double price;
 
-    public Car(int colour, double price) {
+    public Car(String colour, double price) {
         this.colour = colour;
         this.price = price;
     }
 
-    public int getColour() {
+    public String getColour() {
         return colour;
     }
 

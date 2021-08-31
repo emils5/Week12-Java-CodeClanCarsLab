@@ -25,9 +25,18 @@ public class Dealership implements IBuy, ISell {
         return this.cars.size();
     }
 
-    public void addCar(Car car){
-        this.cars.add(car);
+    public void buyCar(Car car){
+        if (till > car.getPrice()) {
+            this.cars.add(car);
+        }
     }
+
+    public void sellCar(Car car){
+        this.cars.remove(car);
+    }
+
+
+
 
     @Override
     public double getPrice(Car car) {
